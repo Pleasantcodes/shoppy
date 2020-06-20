@@ -5,7 +5,7 @@ function Navbar() {
         <header>
             <div className='overlay'></div>
                 <nav>
-                <h2>Shoppy</h2>
+                <h2>Bóò ń bàtà</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
