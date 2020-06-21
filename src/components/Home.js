@@ -69,7 +69,7 @@ const Home = () => {
                 <a  className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
-            <h1>Current Numbers in cart {basketNumbers}</h1>
+            <h1>Current Numbers in cart</h1>
         </div>
 
        
