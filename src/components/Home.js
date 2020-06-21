@@ -19,56 +19,56 @@ const Home = (props) => {
                 <img src={Img1} className="ir" alt="Nike React Vision"/>
                 <h3>Nike React Vision</h3>
                 <h3>₦55,000</h3>
-                <a  className="addToCart cart1" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart1" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img2} className="ir" alt="Nike Adapt Auto Max"/>
                 <h3>Nike Adapt Auto Max</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart2" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart2" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img3}  className="ir" alt="Nike Air Force 1 Mid '07"/>
                 <h3>Nike Air Force 1 Mid '07</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart3" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart3" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img4} className="ir" alt="Air Jordan 1 Low SE"/>
                 <h3>Air Jordan 1 Low SE</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart4" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img4} className="ir" alt="Air Jordan 1 Low SE"/>
                 <h3>Air Jordan 1 Low SE</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart4" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img4} className="ir" alt="Air Jordan 1 Low SE"/>
                 <h3>Air Jordan 1 Low SE</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart4" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img4} className="ir" alt="Air Jordan 1 Low SE"/>
                 <h3>Air Jordan 1 Low SE</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart4" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
             <div className="image">
                 <img src={Img4} className="ir" alt="Air Jordan 1 Low SE"/>
                 <h3>Air Jordan 1 Low SE</h3>
                 <h3>₦75,000</h3>
-                <a  className="addToCart cart4" href="#">Add to cart</a>
+                <a onClick={props.addBasket} className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
             

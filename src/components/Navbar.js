@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Img2 from '../img/gaji.jpg';
+import { connect } from 'react-redux';
+import { getNumbers } from '../actions/getAction';
 
-function Navbar() {
+function Navbar(props) {
+    console.log(props);
+
+    useEffect(() => {
+        getNumbers();
+         
+    }, [])
     return (
         <header>
             <div className='overlay'></div>
@@ -11,7 +19,7 @@ function Navbar() {
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li className="cart"><a href="#">
-                    <ion-icon name="cart-outline"></ion-icon>Cart <span>0</span>
+                    <ion-icon name="cart-outline"></ion-icon>Cart <span>{props.basketProps.basketNumbers}</span>
                     </a></li>
                 </ul>
                 </nav>
@@ -19,4 +27,8 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+const mapStateToProps = state => ({
+    basketProps: state.basketState
+}) 
+
+export default connect(mapStateToProps, { getNumbers })(Navbar);
