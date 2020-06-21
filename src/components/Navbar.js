@@ -11,7 +11,7 @@ function Navbar() {
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li className="cart"><a href="#">
-                    <ion-icon name="cart-outline"></ion-icon>Cart<span>0</span>
+                    <ion-icon name="cart-outline"></ion-icon>Cart <span>0</span>
                     </a></li>
                 </ul>
                 </nav>

@@ -7,9 +7,11 @@ import Img6 from '../img/img6.jpg';
 import Img7 from '../img/img7.jpg';
 import Img8 from '../img/img8.jpg';
 import Img9 from '../img/img9.jpg';
+import { connect } from 'react-redux';
+import { addBasket } from '../actions/addAction';
 
-const Home = () => {
-    
+const Home = (props) => {
+    console.log(props);
 
     return (
         <div className="container">
@@ -69,7 +71,7 @@ const Home = () => {
                 <a  className="addToCart cart4" href="#">Add to cart</a>
             </div>
 
-            <h1>Current Numbers in cart</h1>
+            
         </div>
 
        
@@ -77,4 +79,4 @@ const Home = () => {
 }
 
 
-export default Home;
+export default connect(null, { addBasket })(Home);
