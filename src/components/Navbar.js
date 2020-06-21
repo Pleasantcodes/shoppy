@@ -5,12 +5,12 @@ function Navbar() {
         <header>
             <div className='overlay'></div>
                 <nav>
-                <h2>Bóò ń bàtà</h2>
+                <h2>Sálúbàtà</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li className="cart"><a href="#">
-                    <ion-icon name="cart-outline"></ion-icon>Cart<span></span>
+                    <ion-icon name="cart-outline"></ion-icon>Cart<span>0</span>
                     </a></li>
                 </ul>
                 </nav>
