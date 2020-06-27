@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { productQuantity } from '../actions/productQuantity';
+import { productQuantity, clearProduct } from '../actions/productQuantity';
 
 import Img1 from '../img/img1.jpg';
 import Img2 from '../img/img2.jpg';
@@ -11,7 +11,7 @@ import Img7 from '../img/img7.jpg';
 import Img8 from '../img/img8.jpg';
 import Img9 from '../img/img9.jpg';
 
-function cart({basketProps, productQuantity}) {
+function cart({basketProps, productQuantity, clearProduct}) {
     console.log(basketProps);
 
     let productsInCart = [];
@@ -50,15 +50,15 @@ function cart({basketProps, productQuantity}) {
         console.log("selected product");
         console.log(product);
         return ( 
-            <Fragment>
-                <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages(product)} />
+            <Fragment key={index}>
+                <div className="product"><ion-icon onClick={() => clearProduct(product.tagName)} name="close-circle"></ion-icon><img src={productImages(product)} />
                     <span className="sm-hide">{product.name}</span>
                 </div>
                 <div className="price sm-hide">₦{product.price}.00</div>
                 <div className="Quantity">
-                <ion-icon onClick={() => productQuantity('decrease')} className="decrease" name="arrow-back-circle-outline"></ion-icon>
+                <ion-icon onClick={() => productQuantity('decrease', product.tagName)} className="decrease" name="arrow-back-circle-outline"></ion-icon>
                  <span>{product.numbers}</span>
-                <ion-icon onClick={() => productQuantity('increase')}  className="increase" name="arrow-forward-circle-outline"></ion-icon>
+                <ion-icon onClick={() => productQuantity('increase', product.tagName)}  className="increase" name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 <div className="total">₦{product.numbers * product.price}.00</div>
             </Fragment>
@@ -88,4 +88,4 @@ const mapStateToProps = state => ({
     basketProps: state.basketState
 });
 
-export default connect(mapStateToProps, { productQuantity } )(cart);
+export default connect(mapStateToProps, { productQuantity, clearProduct } )(cart);
