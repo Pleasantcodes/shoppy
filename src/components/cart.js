@@ -32,9 +32,9 @@ function cart({basketProps}) {
         return ( 
             <Fragment>
                 <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages[index]} />
-                    <span className="om-hide">{product.name}</span>
+                    <span className="sm-hide">{product.name}</span>
                 </div>
-                <div className="price on-hide">${product.price}.00</div>
+                <div className="price sm-hide">${product.price}.00</div>
                 <div className="Quantity">
                 <ion-icon className="decrease" name="arrow-back-circle-outline"></ion-icon>
                  <span>{product.numbers}</span>
