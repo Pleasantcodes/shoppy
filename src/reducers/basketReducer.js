@@ -8,6 +8,7 @@ const initialState = {
     products: {
         reactVision: {
             name: "React Vision",
+            tagName: "reactVision",
             price: 55000.00,
             numbers: 0,
             inCart: false
@@ -15,6 +16,7 @@ const initialState = {
         
         adaptAutoMax: {
             name: "Nike Adapt Auto Max",
+            tagName: "adaptAutoMax",
             price: 75000.00,
             numbers: 0,
             inCart: false
@@ -22,6 +24,7 @@ const initialState = {
         
         airForce1Mid07: {
             name: "Nike Air Force 1 Mid '07",
+            tagName: "airForce1Mid07",
             price: 65000.00,
             numbers: 0,
             inCart: false
@@ -29,6 +32,7 @@ const initialState = {
 
         jordan1LowSE: {
             name: "Air Jordan 1 Low SE",
+            tagName: "jordan1LowSE",
             price: 75000.00,
             numbers: 0,
             inCart: false
@@ -36,6 +40,7 @@ const initialState = {
 
         nikeAirVaporMax: {
             name: "Nike Air VaporMax",
+            tagName: "nikeAirVaporMax",
             price: 95000.00,
             numbers: 0,
             inCart: false
@@ -43,6 +48,7 @@ const initialState = {
 
         airZoomPegasus37: {
             name: "Air Zoom Pegasus 37",
+            tagName: "airZoomPegasus37",
             price: 75000.00,
             numbers: 0,
             inCart: false
@@ -50,6 +56,7 @@ const initialState = {
 
         airJordan1Mid: {
             name: "Air Jordan 1 Mid",
+            tagName: "airJordan1Mid",
             price: 85000.00,
             numbers: 0,
             inCart: false
@@ -57,6 +64,7 @@ const initialState = {
 
         leBron17Graffiti: {
             name: 'LeBron 17 "Graffiti"',
+            tagName: 'LeBron17Graffiti',
             price: 155000.00,
             numbers: 0,
             inCart: false
